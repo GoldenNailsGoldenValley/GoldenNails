@@ -77,6 +77,11 @@ a {
 }
 
 
+.facebook{
+  color: cyan;
+    text-decoration: underline;
+}
+
 
 .navbar{
     display: flex;
@@ -196,7 +201,7 @@ a:link {
 }
 
 .facebook{
-    color: #3b5998;
+    color: cyan;
     text-decoration: underline;
 }
 
