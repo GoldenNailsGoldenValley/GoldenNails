@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  
+
+header{
+    width: 100vw ;
+    height: 100vh;
+    
+    background-image: url("goldennail.jpeg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+}
+body{
+  background-color: rgb(232, 228, 228);
+  overflow-x: hidden;
+}
+
+
+body html{
+     overflow-x: hidden;
+}
+
+.gold{
+    color: yellow;
+}
+
+.red{
+    color: red;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.header-content{
+    text-shadow: rgba(255, 255, 255, 0.77) 1px 0 10px;
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.header-content h2{
+    font-size: 4vmin;
+}
+
+.line{
+    width: 200px;
+    height: 4px;
+    background: rgb(106, 106, 61);
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.ctn {
+  
+    padding: 8px 15px;
+    background: rgb(106, 106, 61);
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+}
+
+
+
+.navbar{
+    display: flex;
+    position: absolute;
+    top: 0;
+
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link li {
+    margin: 0 30px;
+
+}
+
+.active{
+    color: yellow;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+.middle-button{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    display: none;
+    cursor: pointer;
+}
+
+
+
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color: #be0000;
+}
+
+.checked{
+    color: rgb(135, 135, 71);
+}
+
+.col{
+    text-align: center;
+}
+
+.row{
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
+.author{
+    color: rgb(133, 133, 133);
+}
+
+
+.review-text{
+    color: rgb(118, 118, 11);
+    padding: 0px 20px
+}
+
+.line-small{
+    width: 100px;
+    height: 4px;
+    background-color: red;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.star-row{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.reviews{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+
+}
+
+
+section{
+     margin: auto;
+}
+
+.reviews-section .row{
+    margin-top: 50px;
+}
+
+.reviews-btn{
+display: flex;
+justify-content: center;
+width: 10%;
+ 
+ align-items: center;
+ align-content: center;
+ margin: auto;
+
+    
+}
+
+
+li{
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+
+li:hover{
+    color: yellow;
+    text-decoration: underline;
+}
+
+/* mobile devices only  */
+
+
+.row2{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.new-img{
+    height: 400px;
+    width: 400px;
+    border: 3px solid rgb(106, 106, 61);
+}
+
+
+
+@media screen and (max-width:600px){
+    .middle-button{
+        display: block;
+    }
+
+    .new-img{
+        height: 300px;
+        width: 300px;
+        margin: 0 auto;
+
+    }
+
+  .reviews-btn{
+   display: none;
+
+  }
+
+    .reviews-section .row{
+        margin-top: 10px;
+    }
+    
+
+    .line-small{
+        width: 15px;
+    }
+
+    .fa-star{
+      height: 1px;
+      width: 15px;
+    }
+
+
+
+    .row{
+        display: flex;
+        width: 50%;
+    
+        justify-content: space-between;
+        
+        text-align: center;
+        align-items: center;
+        align-content: center;
+  
+      
+    }
+
+    .row .col{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+        
+
+
+    .reviews{
+        display: flex;
+        font-size: 12px;
+        width: 103px;
+    }
+
+    .border{
+        border-left: 1px solid black;
+        border-right:1px solid black ;
+    }
+
+   
+  
+
+    .navbar {
+        padding: 0;
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+
+    .nav-link {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: #be0000;
+        margin-top: -1000px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu {
+        margin-top: 0px;
+
+    }
+    .nav-link li {
+        margin: 30px auto;
+        
+    }
+
+
+    @media screen and (min-width:414px){
+         .reviews{
+            width: 120px;
+            margin-left: 15px;
+         } 
+    }
+
+    @media screen and (min-width:375px){
+        .reviews{
+           width: 120px;
+           
+        } 
+   }
+
+
+    
+}
+
+
+.footer{
+     width: 100vw;
+     min-height: 100px;
+     padding: 10px 10px;
+     margin: 0;
+     background-color: rgb(133, 1, 1);
+     color: rgb(255, 255, 0);
+     text-align: center;
+}
+
+.footer p{
+    margin: 20px auto;
+    padding: 20px auto;
+}
