@@ -5,6 +5,17 @@ const contactLink = document.querySelector(".contact")
 const fullImgBox = document.getElementById("fullImgBox")
 const fullImg = document.getElementById("fullImg")
 
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry);
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show")
+        } 
+    })
+ })
+ 
+
 function openFullImg(pic){
     fullImgBox.style.display = "flex"
     fullImg.src = pic
@@ -21,3 +32,6 @@ menuBtn.addEventListener("click", () => {
     
  })
  
+ 
+const hiddenElements = document.querySelectorAll(".hidden")
+hiddenElements.forEach((el) => observer.observe(el))
